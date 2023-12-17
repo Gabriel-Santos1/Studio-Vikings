@@ -5,8 +5,9 @@
 
 ##  Primeiro passo
 
-- [ ] 
+- [ ] Protótipo Figma
+- [ ] Iniciando projeto ReactJs
 
 # Bibliografia recomendada
 
- 1. **
+ 1. [React Learn](https://react.dev/learn)
