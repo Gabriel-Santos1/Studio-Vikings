@@ -6,8 +6,9 @@
 ##  Primeiro passo
 
 - [ ] Protótipo Figma
-- [ ] Iniciando projeto ReactJs
+- [ ] Iniciando projeto ReactJs com ViteJs
 
 # Bibliografia recomendada
 
  1. [React Learn](https://react.dev/learn)
+ 1. [Vite Learn](https://vitejs.dev/guide/)
