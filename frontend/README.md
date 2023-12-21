@@ -1,7 +1,8 @@
 ##  Primeiro passo
 
-- [ ] Protótipo Figma
-- [ ] Iniciando projeto ReactJs com ViteJs
+- [x] Página inicial
+- [ ] Formulário de login
+
 
 # Referências
 
