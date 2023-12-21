@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  height: 500vh;
+  background-color: #1d201e;
+}
+
+.container {
+  max-with: 1280px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  padding: 50px 4%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .2s;
+}
+
+header.scroll {
+    background-color: #fecb00;
+    
+    padding: 20px 4%;
+}
+
+header.scroll a {
+    color: #1d201e;
+}
+
+header.scroll .btn-login button {
+    background-color: #1d201e;
+    color: #fecb00;
+
+}
+
+header img {
+  max-width: 100px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a {
+  color: #fecb00;
+
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-login button {
+  width: 90px;
+  height: 30px;
+  border: 0;
+  background-color: #fecb00;
+  color: #1d201e;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url(../src/img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
