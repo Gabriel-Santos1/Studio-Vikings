@@ -10,15 +10,12 @@ include("connection.php");
     while ($line = mysqli_fetch_assoc($result)) {
         $name = $line['name'];
         $barber = $line['barber'];
-        $date = $line['data'];
+        $date = $line['date'];
 
         echo " <tr>
         <th scope='row'>$name</th>
         <td>$barber</td>
-        <td>$date</td>
-        <td>
-            
-        </td>
+        <td>25/05/2002</td>
         </tr>";
 
     }
