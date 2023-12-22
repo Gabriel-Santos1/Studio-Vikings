@@ -24,6 +24,97 @@ html {
   margin: auto;
 }
 
+header {
+  width: 100%;
+  padding: 30px 4%;
+  border-bottom: 1px solid var(--color-01);
+
+  background-color: var(--color-04);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: var(--transition-template);
+}
+
+header.scroll {
+  background-color: var(--color-01);
+
+  padding: 20px 4%;
+}
+
+header.scroll a {
+  color: var(--color-03);
+}
+
+header.scroll a:hover {
+  color: var(--color-02);
+}
+
+header.scroll .btn-login button {
+  background-color: var(--color-03);
+  color: var(--color-01);
+}
+
+header.scroll .btn-login button:hover {
+  background-color: var(--color-02);
+}
+
+header img {
+  max-width: 100px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul li a {
+  color: var(--color-01);
+
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--transition-template);
+}
+
+header ul li a:hover {
+  color: var(--color-02);
+}
+
+.btn-login button {
+  width: 90px;
+  height: 30px;
+  border: 0;
+  background-color: var(--color-01);
+  color: var(--color-03);
+  cursor: pointer;
+  transition: var(--transition-template);
+  border-radius: 10px;
+
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-login button:hover {
+  background-color: var(--color-02);
+  color: var(--color-01);
+  border: 1.5px;
+  border-color: var(--color-01);
+}
+
 .container {
   width: 100wh;
   height: 80vh;
@@ -57,7 +148,6 @@ html {
 .form-header {
   margin-bottom: 3rem;
   display: flex;
-  justify-content: center;
 }
 
 .flex {
@@ -129,105 +219,7 @@ html {
 
 .continue-button button:hover {
   color: var(--color-01);
-  background-color: var(--color-03);
-}
-
-header {
-  width: 100%;
-  padding: 50px 4%;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: var(--transition-template);
-}
-
-header.scroll {
-  background-color: var(--color-01);
-
-  padding: 20px 4%;
-}
-
-header.scroll a {
-  color: var(--color-03);
-}
-
-header.scroll a:hover {
-  color: var(--color-02);
-}
-
-header.scroll .btn-login button {
-  background-color: var(--color-03);
-  color: var(--color-01);
-}
-
-header.scroll .btn-login button:hover {
   background-color: var(--color-02);
-  color: var(--color-03);
-}
-
-header img {
-  max-width: 100px;
-}
-
-header ul {
-  list-style-type: none;
-}
-
-header ul li {
-  display: inline-block;
-  margin: 0 40px;
-}
-
-header ul li a {
-  color: var(--color-01);
-
-  font-family: Jost;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: var(--transition-template);
-}
-
-header ul li a:hover {
-  color: var(--color-02);
-}
-
-.btn-login button {
-  width: 90px;
-  height: 30px;
-  border: 0;
-  background-color: var(--color-01);
-  color: var(--color-03);
-  cursor: pointer;
-  transition: var(--transition-template);
-  border-radius: 10px;
-
-  font-family: Jost;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.btn-login button:hover {
-  background-color: var(--color-02);
-  color: var(--color-01);
-  border: 1.5px;
-  border-color: var(--color-01);
-}
-
-.banner {
-  height: 100vh;
-  background-image: url(../src/img/banner.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 footer {
