@@ -15,11 +15,12 @@ if (isset($_POST["submit"])) {
     if(($password == $confirm_password) && ($cont != 1)) {
         $result = mysqli_query($conn, "INSERT INTO `user`(`name`,`cpf`, `email`, `password`, `phone`) 
         VALUES ('$first_name','$cpf','$email','$password','$phone')");
+        header('location: ../frontend/home.html');
         
-        echo"Cadastrado com suceso!";
     }
     else{
-        echo "Não foi possível cadastrar. As senhas não coincidem ou conta existente";
+        header('location: ../frontend/html/sign-in.html');
+
     }
 
 
