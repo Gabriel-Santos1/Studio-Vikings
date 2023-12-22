@@ -32,7 +32,9 @@ html {
 
 header {
   width: 100%;
-  padding: 50px 4%;
+  padding: 30px 4%;
+  border-bottom: 1px solid var(--color-01);
+  background-color: rgba(0, 0, 0, 0.70);
 
   position: fixed;
   top: 0;
