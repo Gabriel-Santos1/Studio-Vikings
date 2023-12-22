@@ -232,6 +232,7 @@ header ul li a:hover {
 
   padding: .75rem;
 
+  position: relative;
   border-bottom: 1px solid var(--color-02);
 }
 
@@ -250,7 +251,15 @@ header ul li a:hover {
   outline: 1px solid var(--color-01);
 }
 
+.option input[type="radio"] {
+  all: unset;
 
+  position: absolute;
+  inset: 0;
+
+  cursor: pointer;
+
+}
 
 .confirm-button button {
   width: 100%;
