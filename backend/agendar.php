@@ -1,15 +1,37 @@
 <?php
-include("./validation/validation.php");
-?>
+session_start();
+include("connection.php");
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System</title>
-</head>
-<body>
+ if (isset($_POST["submit"])) {
+    $barber = $_POST['option'] ?? '';
+    $sql = "SELECT u.name,s.barber,s.date FROM `user` as u,schedule as s WHERE u.id_user=s.id_time";
+    $result = mysqli_query($conn, $sql);
     
-</body>
-</html>
+    while ($line = mysqli_fetch_assoc($result)) {
+        $name = $line['name'];
+        $barber = $line['barber'];
+        $date = $line['data'];
+
+        echo " <tr>
+        <th scope='row'>$name</th>
+        <td>$barber</td>
+        <td>$date</td>
+        <td>
+            
+        </td>
+        </tr>";
+
+    }
+    
+}
+
+ else{
+     header('location: ../frontend/html/login.html');
+ }
+
+
+
+
+
+
+?>

@@ -13,11 +13,7 @@
 
      }
 
-    function mensagem($text, $type){
-        echo "<div class='alert alert-$type' role='alert'>
-        $text
-      </div>";
-    }
+     
 
     
 ?>
