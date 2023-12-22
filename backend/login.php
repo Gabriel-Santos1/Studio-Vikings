@@ -19,7 +19,7 @@ if (isset($_POST["submit"])) {
         session_start();
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
-        header("location: system.php");
+        header("location: agendar.php");
     }
 }
 
