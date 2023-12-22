@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("connection.php");
 
 if (isset($_POST["submit"])) {
@@ -9,10 +10,16 @@ if (isset($_POST["submit"])) {
     $result = mysqli_query($conn, $sql);
     $validation = mysqli_num_rows($result);
     if ($validation < 1) {
-        echo 'Login ou senha inválido';
+        // echo 'Login ou senha inválido';
+        unset($_SESSION['email']);
+        unset($_SESSION['password']);
+        header('location: ../frontend/html/login.html');
     } 
     else {
-        echo 'Logado';
+        session_start();
+        $_SESSION['email'] = $email;
+        $_SESSION['password'] = $password;
+        header("location: system.php");
     }
 }
 

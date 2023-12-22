@@ -3,7 +3,7 @@
     $server = "localhost";
     $user = "root";
     $pass = "";
-    $bd = "studio";
+    $bd = "estudio";
 
     if($conn = mysqli_connect($server, $user, $pass, $bd)){
         //echo "connect";
