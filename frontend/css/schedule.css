@@ -163,11 +163,11 @@ header ul li a:hover {
 
   border-radius: 10px;
   border: 1px solid var(--color-01);
-  background-color: #fff;
+  background-color: var(--color-01);
 }
 
 #selected-value {
-  color: var(--color-01);
+  color: var(--color-03);
   font-size: .85rem;
 }
 
@@ -177,7 +177,7 @@ header ul li a:hover {
 }
 
 #chevrons {
-  color: var(--color-01);
+  color: var(--color-03);
 }
 
 #chevrons [name="caret-up-outline"] {
@@ -185,7 +185,7 @@ header ul li a:hover {
 }
 
 #options:focus + #select-button, #options:checked + #selected-button {
-  outline: 1px solid var(--color-01);
+  outline: 1px solid var(--color-02);
 }
 
 #category-select:has(#options:checked) label,
@@ -217,12 +217,12 @@ header ul li a:hover {
   z-index: 3;
 }
 
-#options_01 {
-  margin-top: .25rem;
+#option {
+  margin-top: .2rem;
 
   border-radius: 10px;
-  border: 1px solid #fff;
-  background: #fff;
+  border: 1px solid var(--color-01);
+  background: var(--color-01);
 }
 
 .option {
@@ -232,7 +232,7 @@ header ul li a:hover {
 
   padding: .75rem;
 
-  border-bottom: 1px solid var(--color-01);
+  border-bottom: 1px solid var(--color-02);
 }
 
 .option label {
@@ -241,6 +241,7 @@ header ul li a:hover {
 
 .option:has(input:checked),
 .option:hover {
+  border-radius: 10px;
   border-bottom: 1px solid var(--color-02);
   background-color: var(--color-02);
 }
