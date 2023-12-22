@@ -12,7 +12,10 @@ if (isset($_POST["submit"])) {
     $validation = mysqli_query($conn,"SELECT * FROM `user` WHERE email='$email'");
     $cont = mysqli_num_rows($validation);
 
-    if(($password == $confirm_password) && ($cont != 1)) {
+    $validation_1 = mysqli_query($conn,"SELECT * FROM `user` WHERE cpf='$cpf'");
+    $cont_1 = mysqli_num_rows($validation_1);
+
+    if(($password == $confirm_password) && ($cont != 1) && ($cont_1 !=1)) {
         $result = mysqli_query($conn, "INSERT INTO `user`(`name`,`cpf`, `email`, `password`, `phone`) 
         VALUES ('$first_name','$cpf','$email','$password','$phone')");
         header('location: ../frontend/home.html');
