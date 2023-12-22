@@ -24,27 +24,35 @@ html {
 header {
   width: 100%;
   padding: 50px 4%;
-  
+
   position: fixed;
   top: 0;
   left: 0;
-  transition: .2s;
+  transition: .15s;
 }
 
 header.scroll {
-    background-color: #fecb00;
-    
-    padding: 20px 4%;
+  background-color: #fecb00;
+
+  padding: 20px 4%;
 }
 
 header.scroll a {
-    color: #1d201e;
+  color: #1d201e;
+}
+
+header.scroll a:hover {
+  color: #fecb00;
 }
 
 header.scroll .btn-login button {
-    background-color: #1d201e;
-    color: #fecb00;
+  background-color: #1d201e;
+  color: #fecb00;
+}
 
+header.scroll .btn-login button:hover {
+  background-color: #fecb00;
+  color: #1d201e;
 }
 
 header img {
@@ -70,6 +78,11 @@ header ul li a {
   line-height: normal;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.15s;
+}
+
+header ul li a:hover {
+  color: #1d201e;
 }
 
 .btn-login button {
@@ -89,4 +102,12 @@ header ul li a {
   line-height: normal;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.btn-login button:hover {
+  background-color: #1d201e;
+  color: #fecb00;
+  border: 1.5px;
+  border-color: #fecb00;
+
 }
