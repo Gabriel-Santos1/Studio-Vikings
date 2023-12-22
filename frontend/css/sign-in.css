@@ -25,20 +25,33 @@ html {
 }
 
 .container {
-  width: 100%;
+  width: 100wh;
   height: 80vh;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0,0,0, .212);
 }
 
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-04);
+  padding: 10rem;
+}
+
+.form-image img {
+  width: 31rem;
+}
+
 .form {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: var(--color-04);
-  padding: 3rem;
+  padding: 14rem;
 }
 
 .form-header {
@@ -66,23 +79,57 @@ html {
 
 .input-group {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .input-box {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1.1rem;
 }
 
 .input-box input {
-  margin: 0.6rem 0:
-  padding: 0.8rem 1.2rem;
+  margin: 0.2rem 0;
+  padding: 0.4rem 1.2rem;
   border: none;
   border-radius: 10px;
   box-shadow: 1px 1px 6px #0000001C;
 }
 
-.input-box input:hover {
-  
+.input-box input:focus-visible {
+  outline: 1px solid var(--color-01);
+}
+
+.input-box label {
+  font-size: 0.75rem;
+  font-weigth: 700;
+}
+
+.continue-button button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  padding: 0.62rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  color: var(--color-03);
+  background-color: var(--color-01);
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--transition-template);
+}
+
+.continue-button button:hover {
+  color: var(--color-01);
+  background-color: var(--color-03);
 }
 
 header {
