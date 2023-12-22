@@ -248,17 +248,3 @@ footer {
   font-weight: 100;
   padding: 1.5rem;
 }
-
-@media screen and (max-width: 902px) {
-  #footer_content {
-    grip-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #footer_content {
-    grip-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-  }
-}
