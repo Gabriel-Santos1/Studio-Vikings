@@ -10,41 +10,111 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>Studio Vikings</title>
-    <link rel="icon" type="image/x-icon" href="/frontend/src/svg/fav.svg">
-    <link rel="stylesheet" href="./css/home.css"/>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Agendamento</title>
+    <link rel="icon" type="image/x-icon" href="../src/svg/fav.svg">
+    <link rel="stylesheet" href="../css/schedule.css"/>
   </head>
   <body>
     <header id="header">
-        <div class="container">
+        <div class="container-header">
             <div class="flex">
 
-                <a href="home.html"><img id="logo-1" src="./src/svg/logo-2.svg" alt="Logo Studio Vikings"></a>
+                <a href="../home.html" alt="Logo Studio Vikings">
+                  <img id="logo-1" src="../src/svg/logo-2.svg" alt="Logo Studio Vikings">
+                </a>
 
                 <nav>
                     <ul>
-                        <li><a href="./home.html">Início</a></li>
+                        <li><a href="../home.html">Início</a></li>
                         <li><a href="#">Agendar</a></li>
                         <li><a href="#">Sobre</a></li>
                     </ul>
                 </nav>
 
-                <div class="btn-login">
-                    <a href="./html/login.html"><button>ENTRAR</button></a>
+                <div class="user">
+                    <a href="#">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </a>
                 </div>
 
             </div><!-- flex -->
         </div><!-- container -->
     </header>
 
-    <section class="banner"></section>
+    <main>
+      <div class="container">
+
+        <div class="form-image">
+          <img src="../src/svg/undraw_date_picker_re_r0p8.svg" alt="Foto de um Viking">
+        </div>
+
+        <div class="form">
+
+          <form action="../../backend/agendar.php" method="POST">
+
+            <div class="form-header">
+
+              <div class="title">
+                <h1>Agendamento</h1>
+              </div>
+
+            </div> <!--Form Header-->
+            
+            <div class="select">
+
+                <div id="category-select">
+
+                    <label for="options">Barbeiro</label>
+                    <input name="barber" type="checkbox" id="options">
+
+                    <div id="select-button">
+                        
+                        <div id="selected-value">Selecione o barbeiro</div>
+
+                        <div id="chevrons">
+
+                            <ion-icon name="caret-down-outline"></ion-icon>
+                            <ion-icon name="caret-up-outline"></ion-icon>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <ul id="options_01">
+                    <li class="option">
+                        <input type="radio" name="option" value="Gabriel" data-label="Gabriel">
+                        <span>Gabriel</span>
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="option" value="Lucas" data-label="Lucas">
+                        <span>Lucas</span>
+                    </li>
+                    <li class="option">
+                        <input type="radio" name="option" value="James" data-label="James">
+                        <span>James</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="confirm-button">
+              <button type="submit" name="submit">Confirmar</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </main>
 
     <footer>
       <div id="footer_content">
 
         <div id="footer_contacts">
-          <a href="home.html"><img id="logo-2" src="./src/svg/logo-2.svg" alt="Logo Studio Vikings"></a>
+          <a href="../home.html"><img id="logo-2" src="../src/svg/logo-2.svg" alt="Logo Studio Vikings"></a>
           <!-- <p>Corte como um viking, conquiste como um rei!</p> -->
 
           <div id="footer_social">
@@ -113,6 +183,6 @@
          | 2023 Todos os direitos reservados
       </div>
     </footer>
-    <script src="./js/script-home.js"></script>
+    <script src="../js/script-sign-in.js"></script>
   </body>
 </html>
