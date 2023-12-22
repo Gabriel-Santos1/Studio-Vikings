@@ -63,40 +63,51 @@
             
             <div class="select">
 
-                <div id="category-select">
-
-                    <label for="options">Barbeiro</label>
-                    <input name="barber" type="checkbox" id="options">
-
-                    <div id="select-button">
-                        
-                        <div id="selected-value">Selecione o barbeiro</div>
-
-                        <div id="chevrons">
-
-                            <ion-icon name="caret-down-outline"></ion-icon>
-                            <ion-icon name="caret-up-outline"></ion-icon>
-
+                <div class="fisrt-category">
+                    <div id="category-select">
+    
+                        <label for="options">Barbeiro</label>
+                        <input name="barber" type="checkbox" id="options">
+    
+                        <div id="select-button">
+                            
+                            <div id="selected-value">Selecione o barbeiro</div>
+    
+                            <div id="chevrons">
+    
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                                <ion-icon name="caret-up-outline"></ion-icon>
+    
+                            </div>
+    
                         </div>
-
+    
                     </div>
-
+    
+                    <ul id="option">
+                        <li class="option">
+                            <input type="radio" name="option" value="Gabriel" data-label="Gabriel">
+                            <span>Gabriel</span>
+                        </li>
+                        <li class="option">
+                            <input type="radio" name="option" value="Lucas" data-label="Lucas">
+                            <span>Lucas</span>
+                        </li>
+                        <li class="option">
+                            <input type="radio" name="option" value="James" data-label="James">
+                            <span>James</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <ul id="option">
-                    <li class="option">
-                        <input type="radio" name="option" value="Gabriel" data-label="Gabriel">
-                        <span>Gabriel</span>
-                    </li>
-                    <li class="option">
-                        <input type="radio" name="option" value="Lucas" data-label="Lucas">
-                        <span>Lucas</span>
-                    </li>
-                    <li class="option">
-                        <input type="radio" name="option" value="James" data-label="James">
-                        <span>James</span>
-                    </li>
-                </ul>
+                <div class="second-category">
+                    <div id="category-select">
+
+                        <label for="options">Horário</label>
+
+                        <input name="date" type="date" id="options">
+                    </div>
+                </div>
 
             </div>
 
